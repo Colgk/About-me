@@ -43,6 +43,37 @@ margin-bottom: 5rem;
 a:hover {
 color: blue;
 	}
+.balls {
+border-radius: 80%;
+position: fixed;
+width: 80px;
+height: 80px;
+top: 50%;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+#purple2 {
+background: linear-gradient(red, purple);
+right: 92%;
+animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+animation-name: jump2;
+}
+#purple {
+background: linear-gradient(red, purple);
+left: 92%;
+animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+animation-name: jump;
+}
+@keyframes jump2 {
+50% {
+top: 25%;
+}
+}
+@keyframes jump {
+50% {
+top: 25%;
+}
+} 	
 </style>
 <head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,7 +83,8 @@ color: blue;
 <link rel="stylesheet" href="./style.css">
 <title>About Me Page</title>
 </head>
-
+<div class="balls"id="purple"></div>
+<div class="balls"id="purple2"></div>
 <body>
 <div class="container">
 <h1>
